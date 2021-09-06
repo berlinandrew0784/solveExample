@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta http-equiv="Content-Type" content="text/html">
+
+    
+</head>
+
+<body>
+
+<script>
+
+    
+
+function solveExample (a = prompt("СКОЛЬКО БУДЕТ: 1+1=?"))
+{
+    if(a==2)
+    {
+       alert("Это Правильно! МОЛОДЕЦ! Реши следущий пример...");
+       let b = prompt("CКОЛЬКО БУДЕТ: 1+2=?");
+
+       if(b==3) 
+       {
+           alert("Это Правильно! МОЛОДЕЦ! Реши следущий пример...");
+           let c = prompt("СКОЛЬКО БУДЕТ: 1+3=?");
+
+           if (c==4) 
+           {
+               alert("Это Правильно! МОЛОДЕЦ! Реши следущий пример...");
+           }
+           else {
+            
+            alert("Это НЕПРАВИЛЬНО! Попробуй еще раз...");
+            solveExample ()
+
+           }
+       }
+       else {
+
+           alert("Это НЕПРАВИЛЬНО! Попробуй еще раз...");
+           solveExample () 
+       }
+
+    }
+    else {
+    
+    alert("Это НЕПРАВИЛЬНО! Попробуй еще раз...");
+    solveExample () 
+    }
+}
+solveExample () 
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
